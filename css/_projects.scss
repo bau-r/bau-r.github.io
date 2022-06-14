@@ -1,0 +1,35 @@
+.projectBox {
+  background: linear-gradient(217deg, rgba(74, 95, 143, 0.425), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(65, 62, 105, 0.288), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(108, 162, 187, 0.164), rgba(0, 0, 255, 0) 70.71%);
+  padding: 1.5vh;
+  box-shadow: rgba(255, 255, 255, 0.596) 0px 10px 20px, rgba(255, 255, 255, 0.63) 0px 6px 6px;
+  cursor: default;
+}
+.projectBox:hover {
+  box-shadow: rgb(255, 255, 255) 0px 19px 38px, rgb(255, 255, 255) 0px 15px 12px;
+  background: linear-gradient(217deg, rgba(91, 114, 167, 0.425), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(102, 98, 153, 0.288), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(132, 184, 207, 0.164), rgba(0, 0, 255, 0) 70.71%);
+  .projectImage{
+    filter: saturate(100%) brightness(100%);
+  }
+}
+
+.projectImage{
+  filter: brightness(95%);
+  height: 20vh;
+  padding: 1vh;
+}
+
+//.projectTitle {
+// font-size: 3vh;
+//}
+
+.crLinks {
+  color: $link;
+  //font-size: 2.8vh;
+}
+.crLinks:hover {
+  color: $linkAction;
+}

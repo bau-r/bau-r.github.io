@@ -1,0 +1,31 @@
+.emailBoxParent {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+#projectTitle {
+  margin-top: 20vh;
+}
+.emailBox {
+  margin-top: 10vh;
+
+  cursor: pointer;
+  #copy {
+    font-size: 3vh;
+    color: rgb(3, 111, 184);
+  }
+}
+#copy:hover {
+  color: rgba(231, 0, 143, 0.815);
+}
+
+#footer {
+  margin-top: 10vh;
+  .flipH {
+    transform: scale(-1, 1);
+  }
+  
+}
+#last {
+  margin-bottom: -100vh;
+}

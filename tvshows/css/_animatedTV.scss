@@ -1,0 +1,73 @@
+#retroTV {
+    background: url("../img/retroTVicon.png") no-repeat center;
+    background-size: cover;
+    animation-duration: 100s;
+    cursor: pointer;
+    height: 6vh;
+    width: 6vh;
+    animation-name: animo;
+    z-index: -1;
+    animation-iteration-count: infinite;
+    position: absolute;
+    
+}
+
+@keyframes animo {
+    0% {
+        left: 10vw;
+        top: 0vh;
+    }
+    15% {
+        left: 25vw;
+        top: 70vh;
+    }
+    35% {
+        left: 40vw;
+        top: 0vh;
+    }
+    50% {
+        left: 85vw;
+        top: 85vh;
+        transform: rotate(-720deg);
+    }
+    72% {
+        left: 55vw;
+        top: 10vh;
+    }
+    84% {
+        left: 30vw;
+        top: 70vh;
+    }
+    100% {
+        left: 10vw;
+        top: 0vh;
+        transform: rotate(0deg);
+    }
+}
+
+#controler {
+    height: 3rem;
+    width: 3rem;
+    animation-duration: 2s;
+    cursor: pointer;
+    animation-name: animo2;
+    animation-iteration-count: infinite;
+}
+@keyframes animo2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(-8deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    90% {
+        transform: rotate(-8deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

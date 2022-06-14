@@ -1,0 +1,55 @@
+#showBox {
+    width: 80%;
+    margin: auto;
+    /* ----appears after click on btn "more"---- */
+    display: none;
+    img {
+        width: 45vh;
+        margin: auto;
+        box-shadow: rgb(255, 255, 255) 8px 15px 20px, rgb(255, 255, 255) 0px 7px 7px;
+        padding: 1px;
+        background: rgba(255, 255, 255, 0.603);
+    }
+    .showInfo {
+        margin: auto;
+        .details {
+            font-size: 90%;
+        }
+        .plot {
+            width: auto;
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+    .backBox {
+        width: 20vh;
+        margin: auto;
+        .btn {
+            width: 100%;
+            font-weight: bold;
+        }
+    }
+}
+/*media*/
+
+@media screen and (max-width: 1240px) {
+    #showBox {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 991px) {
+    #showBox {
+        width: 80%;
+    }
+}
+/*media mobile*/
+@media screen and (max-width: 480px) {
+    #showBox {
+        width: 100%;
+        img {
+            width: auto !important;
+        }
+    }
+}

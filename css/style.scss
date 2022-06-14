@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Nothing+You+Could+Do&display=swap");
+
+@import "navbar";
+@import "colors";
+@import "home";
+@import "about";
+@import "projects";
+@import "contact";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  //  border: 1px solid rgba(196, 112, 4, 0.747);
+}
+
+html,
+body {
+  background: #be93c510; /* fallback for old browsers */
+  background: linear-gradient(to right, #7bc7cc1e, #be93c518);
+}
+body {
+  font-family: "Baloo Tammudu 2", cursive;
+  color: rgba(20, 2, 49, 0.863);
+}
+
+#home,
+#about,
+#projects,
+#contact {
+  min-height: 100vh;
+}
+
+p::selection {
+  background: #14b19c31;
+}
+b::selection {
+  background: #14b19c31;
+}
+i::selection {
+  background: #14b19c31;
+}
+a::selection {
+  background: #14b19c31;
+}
+span::selection {
+  background: #14b19c31;
+}
+
+.background {
+  position: sticky;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  color: $link;
+}
+
+.handwriting {
+  font-family: "Nothing You Could Do", cursive;
+  animation: colorChanger 15s ease-in-out infinite;
+}
+
+@keyframes colorChanger {
+  0% {
+    color: rgba(20, 2, 49, 0.863);
+  }
+  50% {
+    color: rgba(22, 4, 124, 0.795);
+  }
+  100% {
+    color: rgba(20, 2, 49, 0.863);
+  }
+}
+
+/*   MEDIA  */
+
+@media screen and (max-width: 480px) {
+  .aboutText,
+  #aboutMe,
+  #projectsTitle,
+  #contactTitle {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #typing {
+    font-size: 4.5vh !important ;
+  }
+}
+@media screen and (max-width: 480px) {
+  #copy {
+    font-size: 2.5vh !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    p,
+    .link {
+      font-size: 2.2vh !important;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .skillsWidth {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 990px) {
+  .projectTitle {
+    font-size: 1.4vh;
+    height: 4.3vh;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .skillsWidth {
+    width: 100%;
+  }
+}

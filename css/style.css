@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Nothing+You+Could+Do&display=swap");
+#navBox {
+  z-index: 2;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#navBox #nav {
+  width: 85%;
+  padding-top: 1.5vh;
+}
+
+#navBox .link {
+  margin: 0 1vh;
+  border-top: 2px solid rgba(255, 255, 255, 0);
+}
+
+#navBox p,
+#navBox .link {
+  font-size: 2.6vh;
+}
+
+#navBox .activeLink,
+#navBox .link:hover {
+  color: rgba(231, 0, 143, 0.815);
+  border-top: 2px solid rgba(231, 0, 143, 0.815);
+}
+
+#navBox .ho {
+  color: black;
+}
+
+#barBox p {
+  color: #036fb8;
+}
+
+#links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  width: 70%;
+}
+
+#bar1 {
+  display: none;
+}
+
+#links {
+  display: none;
+}
+
+.fa-chevron-down {
+  font-size: 4vh;
+}
+
+.fa-chevron-up {
+  font-size: 4vh;
+}
+
+#arrowHomeDown i, #arrowSkillsDown i, #arrowSkillsUp i, #arrowProjectsUp i, #arrowProjectsDown i, #arrowContactUp i {
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+#arrowHomeDown i:hover, #arrowSkillsDown i:hover, #arrowSkillsUp i:hover, #arrowProjectsUp i:hover, #arrowProjectsDown i:hover, #arrowContactUp i:hover {
+  -webkit-transform: rotateZ(359deg);
+          transform: rotateZ(359deg);
+  font-size: 7vh;
+}
+
+#arrowHomeDown a:hover, #arrowSkillsDown a:hover, #arrowSkillsUp a:hover, #arrowProjectsUp a:hover, #arrowProjectsDown a:hover, #arrowContactUp a:hover {
+  color: rgba(231, 0, 143, 0.815);
+}
+
+.handwriting #typing {
+  font-size: 7vh;
+}
+
+.aboutText {
+  text-align: justify;
+  font-size: 2.4vh;
+}
+
+.aboutText .link:hover {
+  color: rgba(231, 0, 143, 0.815);
+}
+
+.aboutText b {
+  -webkit-animation: colorChanger 15s ease-in-out infinite;
+          animation: colorChanger 15s ease-in-out infinite;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.skillsWidth {
+  width: 80%;
+}
+
+.projectBox {
+  background: linear-gradient(217deg, rgba(74, 95, 143, 0.425), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(65, 62, 105, 0.288), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(108, 162, 187, 0.164), rgba(0, 0, 255, 0) 70.71%);
+  padding: 1.5vh;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.596) 0px 10px 20px, rgba(255, 255, 255, 0.63) 0px 6px 6px;
+          box-shadow: rgba(255, 255, 255, 0.596) 0px 10px 20px, rgba(255, 255, 255, 0.63) 0px 6px 6px;
+  cursor: default;
+}
+
+.projectBox:hover {
+  -webkit-box-shadow: white 0px 19px 38px, white 0px 15px 12px;
+          box-shadow: white 0px 19px 38px, white 0px 15px 12px;
+  background: linear-gradient(217deg, rgba(91, 114, 167, 0.425), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(102, 98, 153, 0.288), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(132, 184, 207, 0.164), rgba(0, 0, 255, 0) 70.71%);
+}
+
+.projectBox:hover .projectImage {
+  -webkit-filter: saturate(100%) brightness(100%);
+          filter: saturate(100%) brightness(100%);
+}
+
+.projectImage {
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+  height: 20vh;
+  padding: 1vh;
+}
+
+.crLinks {
+  color: #036fb8;
+}
+
+.crLinks:hover {
+  color: rgba(231, 0, 143, 0.815);
+}
+
+.emailBoxParent {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+#projectTitle {
+  margin-top: 20vh;
+}
+
+.emailBox {
+  margin-top: 10vh;
+  cursor: pointer;
+}
+
+.emailBox #copy {
+  font-size: 3vh;
+  color: #036fb8;
+}
+
+#copy:hover {
+  color: rgba(231, 0, 143, 0.815);
+}
+
+#footer {
+  margin-top: 10vh;
+}
+
+#footer .flipH {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+#last {
+  margin-bottom: -100vh;
+}
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  background: #be93c510;
+  /* fallback for old browsers */
+  background: -webkit-gradient(linear, left top, right top, from(#7bc7cc1e), to(#be93c518));
+  background: linear-gradient(to right, #7bc7cc1e, #be93c518);
+}
+
+body {
+  font-family: "Baloo Tammudu 2", cursive;
+  color: rgba(20, 2, 49, 0.863);
+}
+
+#home,
+#about,
+#projects,
+#contact {
+  min-height: 100vh;
+}
+
+p::-moz-selection {
+  background: #14b19c31;
+}
+
+p::selection {
+  background: #14b19c31;
+}
+
+b::-moz-selection {
+  background: #14b19c31;
+}
+
+b::selection {
+  background: #14b19c31;
+}
+
+i::-moz-selection {
+  background: #14b19c31;
+}
+
+i::selection {
+  background: #14b19c31;
+}
+
+a::-moz-selection {
+  background: #14b19c31;
+}
+
+a::selection {
+  background: #14b19c31;
+}
+
+span::-moz-selection {
+  background: #14b19c31;
+}
+
+span::selection {
+  background: #14b19c31;
+}
+
+.background {
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+a {
+  text-decoration: none;
+  color: #036fb8;
+}
+
+.handwriting {
+  font-family: "Nothing You Could Do", cursive;
+  -webkit-animation: colorChanger 15s ease-in-out infinite;
+          animation: colorChanger 15s ease-in-out infinite;
+}
+
+@-webkit-keyframes colorChanger {
+  0% {
+    color: rgba(20, 2, 49, 0.863);
+  }
+  50% {
+    color: rgba(22, 4, 124, 0.795);
+  }
+  100% {
+    color: rgba(20, 2, 49, 0.863);
+  }
+}
+
+@keyframes colorChanger {
+  0% {
+    color: rgba(20, 2, 49, 0.863);
+  }
+  50% {
+    color: rgba(22, 4, 124, 0.795);
+  }
+  100% {
+    color: rgba(20, 2, 49, 0.863);
+  }
+}
+
+/*   MEDIA  */
+@media screen and (max-width: 480px) {
+  .aboutText,
+  #aboutMe,
+  #projectsTitle,
+  #contactTitle {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #typing {
+    font-size: 4.5vh !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #copy {
+    font-size: 2.5vh !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav p,
+  nav .link {
+    font-size: 2.2vh !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .skillsWidth {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 990px) {
+  .projectTitle {
+    font-size: 1.4vh;
+    height: 4.3vh;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .skillsWidth {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

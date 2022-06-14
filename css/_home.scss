@@ -1,0 +1,30 @@
+
+.fa-chevron-down{
+    font-size: 4vh;
+}.fa-chevron-up{
+    font-size: 4vh;
+}
+ #arrowHomeDown,#arrowSkillsDown,#arrowSkillsUp,#arrowProjectsUp,#arrowProjectsDown,#arrowContactUp{
+     i{
+        transition: all .6s ease;
+     }
+    i:hover {
+        transform: rotateZ(359deg);
+        font-size: 7vh;
+      }
+      a:hover{
+        color: $linkAction;
+      }
+ }
+
+
+ .handwriting{
+    #typing{
+        font-size: 7vh;
+     }
+    
+ }
+
+
+
+
